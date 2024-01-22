@@ -221,3 +221,31 @@ const rollDice = (Number) => Math.floor(Math.random() * 6);
 
 const diceResult = rollDice(4);
 console.log("🚀 ~ diceResult:", diceResult);
+
+/*EJERCICIOS REVIEW BASICS
+Iteración 6: Función swap*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Crea una función llamada swap() que reciba un array y dos parametros que sean indices del array. La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como parametro. Retorna el array resultante.
+Sugerencia de array:
+['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño']
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+const swap = (array, index0, index1) => {
+    let arrayIndex0 = array[0]
+    let arrayIndex1 = array[1]
+
+    arrayIndex0 = array[1]
+    arrayIndex1 = array[0]
+    return array
+}
+
+const futbolistas = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño'];
+
+let futbolista0 = futbolistas[0];
+let futbolista1 = futbolistas[1];
+
+const futbolistasSwapped = swap(futbolistas, futbolista0, futbolista1);
+console.log("🚀 ~ futbolistasSwapped:", futbolistasSwapped);
+
+//EJERCICIO INCOMPLETO: No realiza el cambio de posiciones.
